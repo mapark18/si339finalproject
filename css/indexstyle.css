@@ -1,0 +1,133 @@
+.skip {
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus {
+    position: absolute;
+    top: 20px;
+}
+
+header {
+    border-bottom: 5px solid teal;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: navy;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+}
+
+footer p {
+    padding: 5px;
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+li a {
+    color: gold;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: gold;
+}
+
+div a {
+    color: white;
+}
+
+div a:visited {
+    color: white;
+}
+
+nav {
+    padding: 30px;
+    text-align: center;
+    background-color: navy;
+    font-family: 'Roboto', serif;
+}
+
+nav ul li {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li:hover, nav ul li:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.active a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+main {
+    font-family: 'Montserrat', serif;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+}
+
+p {
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.images > img {
+    width: 50%;
+    aspect-ratio: 3/2;
+}
+
+@media screen and (min-width: 700px) {
+    nav ul li {
+        display: inline;
+    }
+    main p {
+        font-size: 1.5em;
+    }
+    .images {
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .images > img {
+        width: 25%;
+        
+    }
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        text-align: right;
+    }
+    .images {
+        gap: 30px;
+    }
+    .images > img {
+        width: 30%;
+
+    }
+}

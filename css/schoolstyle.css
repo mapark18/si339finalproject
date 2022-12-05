@@ -1,0 +1,145 @@
+.skip {
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus {
+    position: absolute;
+    top: 20px;
+}
+
+header {
+    border-bottom: 5px solid teal;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: navy;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+}
+
+footer p {
+    padding: 5px;
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+li a {
+    color: gold;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: gold;
+}
+
+div a {
+    color: white;
+}
+
+div a:visited {
+    color: white;
+}
+
+nav {
+    padding: 30px;
+    text-align: center;
+    background-color: navy;
+    font-family: 'Roboto', serif;
+}
+
+nav ul li {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li:hover, nav ul li:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.active a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+main {
+    font-family: 'Montserrat', serif;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+}
+
+p {
+    padding: 20px;
+}
+
+.gallery{
+    border: 3px solid black;
+    width: 90%;
+    margin: 10px auto;
+    background-color: goldenrod;
+
+
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 50%;
+    margin: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.gallery img{
+    width: 100%;
+    border: 5px solid teal;
+}
+
+.lb-data .lb-caption {
+    font-size: 32px;
+}
+
+@media screen and (min-width: 700px) {
+    nav ul li {
+        display: inline;
+    }
+    .gallery {
+        row-gap: 30px;
+        grid-template-columns: 35% 35%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        text-align: right;
+    }
+    main p {
+        font-size: 1.5em;
+    }
+    .gallery {
+        grid-template-columns: 17% 17% 17% 17%;
+    }
+}
